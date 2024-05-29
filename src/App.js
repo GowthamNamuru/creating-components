@@ -1,9 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
+import Sidebar from './components/Sidebar';
+import Bag from './components/Bag';
+import Apple from './components/Apple';
+import Pear from './components/Pear';
 
 function App() {
   return (
-    <Example/>
+    <div>
+    <Header name = 'Gowtham' color = 'purple'/>
+    <Main greet = 'Howdy'/>
+    <Sidebar greet = 'Howdy'/>
+    <Bag children = {<Apple color = "yellow" number = "5" />}/>
+    <Bag children = {<Pear friend = "Anshu"/>}/>
+    </div>
   );
 }
 
